@@ -1,91 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — GrooveCircle</title>
+  <title>GrooveCircle — Круговий метроном та візуалізатор груву</title>
   <style>
+    :root {
+      --bg: #0f1117;
+      --card: #181c26;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: #2a3040;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #0e1116;
-      color: #e6edf3;
-      line-height: 1.65;
-      padding: 32px 20px;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
-    .container {
-      max-width: 720px;
+    .wrap {
+      max-width: 820px;
       margin: 0 auto;
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 16px;
-      padding: 36px;
+      padding: 48px 20px;
     }
-    h1, h2 {
-      color: #58a6ff;
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 28px;
+      margin-bottom: 24px;
     }
     h1 {
-      margin-top: 0;
-      font-size: 26px;
+      margin: 0 0 12px;
+      font-size: 2rem;
+      line-height: 1.2;
     }
-    h2 {
-      font-size: 18px;
-      margin-top: 24px;
+    .lead {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 1.05rem;
     }
-    p, li {
-      color: #c9d1d9;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .box h2 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      color: var(--accent);
+    }
+    .box p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
     }
     a {
-      color: #58a6ff;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Privacy Policy for GrooveCircle</h1>
-    <p><strong>Effective Date:</strong> November 21, 2026</p>
+  <div class="wrap">
+    <section class="hero">
+      <h1>GrooveCircle</h1>
+      <p class="lead">
+        Візуальний круговий метроном і ритм-тренажер для музикантів. Бачите акценти, грув і частки такту по колу в реальному часі — без зайвого шуму під час занять.
+      </p>
+      <p>
+        <a href="privacy.html">Політика конфіденційності</a> ·
+        <a href="mailto:groovecirclesupport@gmail.com">groovecirclesupport@gmail.com</a>
+      </p>
+    </section>
 
-    <p>
-      This Privacy Policy describes how the <strong>GrooveCircle</strong> mobile application ("the App") handles user information.
-    </p>
+    <section class="grid">
+      <div class="box">
+        <h2>Кругова візуалізація</h2>
+        <p>Наочне коло долей та акцентів допомагає відчувати пульс, синкопи й структуру груву.</p>
+      </div>
+      <div class="box">
+        <h2>Гнучкий темп і слоти</h2>
+        <p>Точне налаштування BPM, TAP-темп і збереження власних ритмічних пресетів для репетицій.</p>
+      </div>
+      <div class="box">
+        <h2>Локальна робота</h2>
+        <p>Налаштування зберігаються на пристрої без зайвих дозволів та сторонньої реклами.</p>
+      </div>
+    </section>
 
-    <h2>1. No Personal Data Collection</h2>
-    <p>
-      GrooveCircle is designed as an offline rhythm and metronome utility. The App does not require user registration or login, and we do not collect, transmit, sell, or share any personally identifiable information (such as your name, email address, location, contacts, or device identifiers).
-    </p>
-
-    <h2>2. Local Storage on Your Device</h2>
-    <p>
-      All custom rhythm presets, tempo settings, beat accents, and slot configurations created within GrooveCircle are stored strictly locally on your device. This data never leaves your device and is not accessible to the developer. Uninstalling the App or clearing its app data removes all locally saved settings.
-    </p>
-
-    <h2>3. Third-Party Services &amp; Analytics</h2>
-    <p>
-      GrooveCircle does not integrate third-party advertising networks or behavioral tracking SDKs.
-    </p>
-
-    <h2>4. Device Permissions</h2>
-    <p>
-      The App only uses standard audio playback capabilities required to generate metronome clicks and rhythm pulses. It does not record audio via your microphone or access your camera, files, or contacts.
-    </p>
-
-    <h2>5. Children's Privacy</h2>
-    <p>
-      Because GrooveCircle does not collect any personal information from any users, it complies with applicable children's privacy regulations.
-    </p>
-
-    <h2>6. Changes to This Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time if new features are added to the App. Any updates will be posted on this page with a revised effective date.
-    </p>
-
-    <h2>7. Contact Us</h2>
-    <p>
-      If you have any questions about this Privacy Policy or the App, please contact us at:
-      <a href="mailto:groovecirclesupport@gmail.com">groovecirclesupport@gmail.com</a>.
-    </p>
-
-    <p style="margin-top: 28px;"><a href="index.html">&larr; Back to GrooveCircle</a></p>
+    <footer>
+      <span>© GrooveCircle</span>
+      <span>
+        <a href="privacy.html">Політика конфіденційності</a> ·
+        <a href="mailto:groovecirclesupport@gmail.com">groovecirclesupport@gmail.com</a>
+      </span>
+    </footer>
   </div>
 </body>
 </html>
