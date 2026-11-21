@@ -1,91 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — GrooveCircle</title>
+  <title>Політика конфіденційності — GrooveCircle</title>
   <style>
+    :root {
+      --bg: #0e1116;
+      --card: #161b22;
+      --text: #e6edf3;
+      --muted: #9ca3af;
+      --accent: #58a6ff;
+      --border: #30363d;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #0e1116;
-      color: #e6edf3;
+      background-color: var(--bg);
+      color: var(--text);
       line-height: 1.65;
       padding: 32px 20px;
     }
     .container {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
-      background: #161b22;
-      border: 1px solid #30363d;
+      background: var(--card);
+      border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 36px;
-    }
-    h1, h2 {
-      color: #58a6ff;
+      padding: 32px 28px;
     }
     h1 {
       margin-top: 0;
-      font-size: 26px;
+      font-size: 1.8rem;
+      color: var(--accent);
     }
     h2 {
-      font-size: 18px;
+      font-size: 1.15rem;
       margin-top: 24px;
+      margin-bottom: 8px;
+      color: var(--accent);
     }
-    p, li {
-      color: #c9d1d9;
+    p {
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 0.92rem;
     }
     a {
-      color: #58a6ff;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer-nav {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Privacy Policy for GrooveCircle</h1>
-    <p><strong>Effective Date:</strong> November 21, 2026</p>
+  <main class="container">
+    <h1>Політика конфіденційності GrooveCircle</h1>
+    <p class="muted">Останнє оновлення: листопад 2026 року</p>
 
+    <h2>1. Загальні положення</h2>
     <p>
-      This Privacy Policy describes how the <strong>GrooveCircle</strong> mobile application ("the App") handles user information.
+      Ця Політика конфіденційності описує, як мобільний додаток <strong>GrooveCircle</strong> обробляє інформацію під час користування круговим метрономом та ритм-тренажером.
     </p>
 
-    <h2>1. No Personal Data Collection</h2>
+    <h2>2. Збір та зберігання даних</h2>
     <p>
-      GrooveCircle is designed as an offline rhythm and metronome utility. The App does not require user registration or login, and we do not collect, transmit, sell, or share any personally identifiable information (such as your name, email address, location, contacts, or device identifiers).
+      GrooveCircle не збирає, не передає на зовнішні сервери та не продає персональні дані користувачів. Параметри метронома, темп та збережені пресети грувів зберігаються локально на вашому пристрої. Видалення додатка або очищення його даних призведе до видалення локально збережених налаштувань.
     </p>
 
-    <h2>2. Local Storage on Your Device</h2>
+    <h2>3. Сторонні послуги та аналітика</h2>
     <p>
-      All custom rhythm presets, tempo settings, beat accents, and slot configurations created within GrooveCircle are stored strictly locally on your device. This data never leaves your device and is not accessible to the developer. Uninstalling the App or clearing its app data removes all locally saved settings.
+      GrooveCircle не інтегрує сторонні рекламні мережі або SDK для відстеження поведінки користувачів.
     </p>
 
-    <h2>3. Third-Party Services &amp; Analytics</h2>
+    <h2>4. Дозволи пристрою</h2>
     <p>
-      GrooveCircle does not integrate third-party advertising networks or behavioral tracking SDKs.
+      Додаток використовує лише стандартні можливості відтворення звуку, необхідні для генерації клацань метронома та ритмічних імпульсів. Він не записує аудіо через мікрофон і не потребує доступу до камери, файлів чи контактів.
     </p>
 
-    <h2>4. Device Permissions</h2>
+    <h2>5. Конфіденційність дітей</h2>
     <p>
-      The App only uses standard audio playback capabilities required to generate metronome clicks and rhythm pulses. It does not record audio via your microphone or access your camera, files, or contacts.
+      Оскільки GrooveCircle не збирає жодної особистої інформації користувачів, додаток відповідає вимогам захисту приватності дітей.
     </p>
 
-    <h2>5. Children's Privacy</h2>
+    <h2>6. Зміни до цієї Політики</h2>
     <p>
-      Because GrooveCircle does not collect any personal information from any users, it complies with applicable children's privacy regulations.
+      Ми можемо час від часу оновлювати цю Політику конфіденційності у разі зміни функціональності додатка або вимог платформ. Актуальна версія завжди публікується на цій сторінці.
     </p>
 
-    <h2>6. Changes to This Policy</h2>
+    <h2>7. Зв'яжіться з нами</h2>
     <p>
-      We may update this Privacy Policy from time to time if new features are added to the App. Any updates will be posted on this page with a revised effective date.
+      Якщо у вас є будь-які запитання щодо цієї Політики конфіденційності або додатка GrooveCircle, зв'яжіться з нами за адресою електронної пошти:
+      <a href="mailto:groovecirclesupport@gmail.com">groovecirclesupport@gmail.com</a>
+      або перейдіть на головну сторінку сайту:
+      <a href="https://groovecircle-app.github.io/groovecircle.github.io/">https://groovecircle-app.github.io/groovecircle.github.io/</a>.
     </p>
 
-    <h2>7. Contact Us</h2>
-    <p>
-      If you have any questions about this Privacy Policy or the App, please contact us at:
-      <a href="mailto:groovecirclesupport@gmail.com>groovecirclesupport@gmail.com</a>.
-    </p>
-
-    <p style="margin-top: 28px;"><a href="index.html">&larr; Back to GrooveCircle</a></p>
-  </div>
+    <div class="footer-nav">
+      <a href="index.html">← Назад на головну GrooveCircle</a>
+      <a href="mailto:groovecirclesupport@gmail.com">groovecirclesupport@gmail.com</a>
+    </div>
+  </main>
 </body>
 </html>
